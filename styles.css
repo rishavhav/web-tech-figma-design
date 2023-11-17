@@ -74,3 +74,47 @@ html {
   word-wrap: break-word;
   padding-left: 20px;
 }
+
+#myButton {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+#blackBox {
+  width: 256px;
+  height: 64px;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  background: #111111;
+}
+
+#label {
+  width: 350px;
+  height: 73px;
+  position: absolute;
+  left: -27px;
+  top: 57px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+#newPostHeader {
+  color: #111111;
+  height: auto;
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: 800;
+  line-height: 40px;
+  position: relative;
+  padding-top: 100px;
+  padding-left: 20px;
+}
