@@ -118,3 +118,56 @@ html {
   padding-top: 100px;
   padding-left: 20px;
 }
+
+.box {
+  width: 400px;
+  height: 400px;
+  opacity: 0.5;
+  background: #c4c4c4;
+  display: flex;
+  align-items: flex-end; /* Aligns content to the bottom */
+  justify-content: center; /* Centers content horizontally */
+  padding-bottom: 20px; /* Adds some space at the bottom */
+  margin-left: 20px;
+}
+
+.below-header {
+  margin-top: 60px;
+  text-align: center;
+  color: #111111;
+  font-size: 40px;
+  font-family: Montserrat;
+  font-weight: 800;
+  line-height: 40px;
+  word-wrap: break-word;
+}
+
+#update-text {
+  text-align: center;
+  color: #111111;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 28px;
+  word-wrap: break-word;
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+  width: 256px; /* Set a fixed width for the button */
+  height: 64px; /* Set a fixed height for the button */
+  margin: 20px auto; /* Auto margins on both sides to center horizontally, and 20px margin-top for spacing */
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background: #ffffff;
+  border-color: #111111;
+  border-width: 5px;
+}
+
+footer {
+  background-color: #111111;
+  height: 30%;
+  color: white;
+}
