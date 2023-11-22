@@ -25,6 +25,13 @@ html {
   padding: 10px;
 }
 
+#boxContainer {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-top: 40px;
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -76,11 +83,15 @@ html {
 }
 
 #myButton {
+  display: inline-block;
   border: none;
   background: none;
   padding: 0;
   margin: 0;
   height: auto;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 1;
 }
 
 #blackBox {
@@ -90,6 +101,7 @@ html {
   left: 20px;
   top: 40px;
   background: #111111;
+  pointer-events: none;
 }
 
 #label {
@@ -125,9 +137,9 @@ html {
   opacity: 0.5;
   background: #c4c4c4;
   display: flex;
-  align-items: flex-end; /* Aligns content to the bottom */
-  justify-content: center; /* Centers content horizontally */
-  padding-bottom: 20px; /* Adds some space at the bottom */
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
   margin-left: 20px;
 }
 
@@ -155,9 +167,9 @@ html {
 
 button {
   display: block;
-  width: 256px; /* Set a fixed width for the button */
-  height: 64px; /* Set a fixed height for the button */
-  margin: 20px auto; /* Auto margins on both sides to center horizontally, and 20px margin-top for spacing */
+  width: 256px;
+  height: 64px;
+  margin: 20px auto;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -166,8 +178,50 @@ button {
   border-width: 5px;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 footer {
+  height: 20%;
   background-color: #111111;
-  height: 30%;
   color: white;
+}
+
+#footer-bg {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10%;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  padding-bottom: 10%;
+}
+
+#footer-about {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  word-wrap: break-word;
+}
+
+#footer-about-me-link {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.7px;
+  word-wrap: break-word;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#footer-about-me-link:hover {
+  text-decoration: none;
 }

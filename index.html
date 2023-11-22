@@ -4,60 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Rishav's AI Blog</title>
     <style></style>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a href="#" class="nav-link">Homepage</a>
-        <div class="underline"></div>
-      </nav>
-    </header>
+    <div style="display: flex; flex-direction: column">
+      <header>
+        <nav class="navbar">
+          <a href="#" class="nav-link">Homepage</a>
+          <div class="underline"></div>
+        </nav>
+      </header>
 
-    <div class="blog-header">
-      <div class="blog-title">Rishav’s AI blog</div>
-    </div>
+      <div class="blog-header">
+        <div class="blog-title">Rishav’s AI blog</div>
+      </div>
 
-    <div class="blog-main">Introduction<br />about me.</div>
+      <div class="blog-main">Welcome, <br />Reader.</div>
 
-    <div class="blog-desc">Introducing blog name..</div>
+      <div class="blog-desc">Tracking Fresh Ideas..</div>
 
-    <button id="myButton" style="width: 100%; position: relative; padding-top: 20px">
-      <div id="blackBox"></div>
-      <div id="label">About me.</div>
-    </button>
+      <a href="aboutMe.html">
+        <button id="myButton" style="width: 100%; position: relative">
+          <div id="blackBox"></div>
+          <div id="label">About me.</div>
+        </button>
+      </a>
 
-    <div style="margin-top: 20px" id="newPostHeader">New posts</div>
+      <div style="margin-top: 20px" id="newPostHeader">New posts</div>
 
-    <div id="boxContainer" style="display: flex; overflow-x: auto; white-space: nowrap; margin-top: 40px">
-      <div class="box">Page 1 Heading</div>
-      <div class="box">Page 1 Heading</div>
-      <div class="box">Page 1 Heading</div>
-      <div class="box">Page 1 Heading</div>
-    </div>
+      <div id="boxContainer">
+        <a href="blogPage1.html" class="box" style="color: black; text-decoration: none">
+          <div>Embracing the Future...</div>
+        </a>
 
-    <div class="below-header">
-      Never miss<br />
-      a Blog.
-    </div>
+        <a href="blogPage2.html" class="box" style="color: black; text-decoration: none">
+          <div>Navigating the World...</div>
+        </a>
 
-    <div id="update-text">
-      Receive updates about new<br />
-      posts.
-    </div>
+        <a href="blogPage3.html" class="box" style="color: black; text-decoration: none">
+          <div>How AI Bias Can...</div>
+        </a>
 
-    <button>JOIN MAILING LIST</button>
+        <a href="blogPage4.html" class="box" style="color: black; text-decoration: none">
+          <div>Navigating the Road...</div>
+        </a>
+      </div>
 
-    <footer>
-      <div style="display: flex; justify-content: space-between; padding-top: 15%; padding-inline-start: 20px; padding-inline-end: 20px">
-        <div style="display: flex; flex-direction: column">
-          <div style="color: white; font-size: 12px; font-family: Poppins; font-weight: 500; line-height: 30px; letter-spacing: 0.6px; word-wrap: break-word">About</div>
-          <div style="color: white; font-size: 14px; font-family: Poppins; font-weight: 500; line-height: 30px; letter-spacing: 0.7px; word-wrap: break-word">About me</div>
+      <div class="below-header">
+        Never miss<br />
+        a Blog.
+      </div>
+
+      <div id="update-text">
+        Receive updates about new<br />
+        posts.
+      </div>
+
+      <button onclick="joinMailingList()">JOIN MAILING LIST</button>
+
+      <footer>
+        <div id="footer-bg">
+          <div style="display: flex; flex-direction: column">
+            <div id="footer-about">About</div>
+            <a href="aboutMe.html" id="footer-about-me-link">About me</a>
+          </div>
+          <div style="display: flex; flex-direction: column">
+            <div style="width: 100%; height: 100%; opacity: 0.25; color: white; font-size: 12px; font-family: Poppins; font-weight: 500; line-height: 30px; letter-spacing: 0.6px; word-wrap: break-word">FOLLOW RISHAV’S</div>
+          </div>
         </div>
-        
-    </footer>
+      </footer>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
